@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hanbat-Market</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css'%}">    
+    <link rel="stylesheet" href="{% static 'book_info.css'%}">
+</head>
+
+<body>
+    <header>
+        <a style="text-decoration:none; color:black;" href="{% url 'hanbat_market:index' %}">
+        <div id="logo">Hanbat-Market
+            <img id="logo_img" src="{% static 'hanbat_logo.png'%}" alt="HBNU_Logo">
+        </div>
+    </a>
+        </div>
+        <div id="login">로그인</div>
+    </header>
+    <main>
+    {% block content %}
+
+    {% endblock %}
+    </main>
+
+
+    <footer></footer>
+</body>
+
+</html>
